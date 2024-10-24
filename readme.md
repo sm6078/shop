@@ -1,0 +1,1 @@
+educational project multimodularity in maven, testing, profiles git in maven
