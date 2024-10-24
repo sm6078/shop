@@ -10,11 +10,14 @@
     </parent>
 
     <artifactId>shop-food</artifactId>
+    <version>${food.version}</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <food.version>1.0.0</food.version>
+        <maven.assembly.plugin.version>3.7.0</maven.assembly.plugin.version>
     </properties>
     <dependencies>
         <dependency>
@@ -23,5 +26,31 @@
             <version>1.0.0</version>
         </dependency>
     </dependencies>
+    <build>
+        <plugins>
+           <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+               <version>${maven.assembly.plugin.version}</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.javaacademy.Runner</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

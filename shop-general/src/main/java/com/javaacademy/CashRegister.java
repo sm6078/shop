@@ -2,17 +2,18 @@ package com.javaacademy;
 
 import lombok.NoArgsConstructor;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * класс Касса
  */
 @NoArgsConstructor
-public class TicketOffice {
-    private final Set<Product> soldProducts = new HashSet<>();
+public class CashRegister {
+    private final List<Product> soldProducts = new ArrayList<>() {
+    };
 
-    public void addSoldProduct (Product product) {
+    public void addSoldProduct(Product product) {
         soldProducts.add(product);
     }
 

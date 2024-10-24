@@ -1,19 +1,21 @@
 package com.javaacademy;
 
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import java.math.BigDecimal;
 
 /**
- * класс Еда
+ * клаcc еда
  */
-//разобраться - доделать
+@Getter
+@Setter
+@ToString(callSuper = true)
 public class Food extends Product {
-
     @NonNull
-    private int amountCalories;
+    private Integer amountCalories;
 
-    public Food(@NonNull String name, @NonNull BigDecimal price, @NonNull int amountCalories) {
+    public Food(@NonNull String name, @NonNull BigDecimal price, @NonNull Integer amountCalories) {
         super(name, price);
         this.amountCalories = amountCalories;
     }
