@@ -1,11 +1,10 @@
 package com.javaacademy;
 
+import java.math.BigDecimal;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
 import lombok.ToString;
-
-import java.math.BigDecimal;
 
 /**
  * класс лекарство
