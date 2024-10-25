@@ -1,9 +1,8 @@
 package com.javaacademy;
 
-import lombok.NoArgsConstructor;
-
 import java.util.ArrayList;
 import java.util.List;
+import lombok.NoArgsConstructor;
 
 /**
  * класс Касса

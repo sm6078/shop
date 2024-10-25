@@ -1,10 +1,8 @@
 package com.javaacademy;
 
+import java.math.BigDecimal;
 import lombok.Data;
 import lombok.NonNull;
-import lombok.experimental.SuperBuilder;
-
-import java.math.BigDecimal;
 
 /**
  * клас Товар

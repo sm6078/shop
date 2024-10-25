@@ -1,13 +1,15 @@
 package com.javaacademy;
 
-import lombok.*;
-import lombok.experimental.SuperBuilder;
-
 import java.math.BigDecimal;
+import lombok.Getter;
+import lombok.NonNull;
+import lombok.Setter;
+import lombok.ToString;
 
 /**
  * клаcc еда
  */
+
 @Getter
 @Setter
 @ToString(callSuper = true)
