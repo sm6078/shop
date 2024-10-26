@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 /**
  * класс Касса
  */
-@NoArgsConstructor
 public class CashRegister {
     private final List<Product> soldProducts = new ArrayList<>() {
     };
